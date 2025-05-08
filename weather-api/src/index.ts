@@ -62,7 +62,7 @@ async function getWeatherData(req: Request, res: Response) {
   try{
       results = await fetchWeatherApi(city); 
       if (results.length === 0) {
-        throw "API returned an empty array."
+        throw new Error("API returned an empty array.");
       }
       await redisClient.set(city, JSON.stringify(results), {
         EX: 30,  // no. of seconds for cacheResults
