@@ -1,0 +1,29 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "dev": "nodemon src/bin.ts",
+    "build": "tsc -b",
+    "start": "node dist/bin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@types/supertest": "^6.0.3",
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "openmeteo": "^1.2.0",
+    "supertest": "^7.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
+    "vitest": "^3.1.3"
+  }
+}
